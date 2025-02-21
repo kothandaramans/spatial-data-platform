@@ -1,0 +1,355 @@
+{
+	"info": {
+		"_postman_id": "cb7d6cd1-63a0-41a9-94aa-6d7e1892c4c5",
+		"name": "spatial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30142814"
+	},
+	"item": [
+		{
+			"name": "fetch all point",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/points/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"points",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch point",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/points/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"points",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "24168c82-e2df-4c6d-9412-8801d8af944e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create point",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Location A\",\r\n    \"latitude\": 12.9716,\r\n    \"longitude\": 77.5946\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/points/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"points",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update point",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Location B\",\r\n    \"latitude\": 12.9716\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/points/:id/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"points",
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6f0a0031-238d-41ae-921d-56f58a729cb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete point",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Location B\",\r\n    \"latitude\": 12.9716,\r\n    \"longitude\": 77.5946\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/points/:id/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"points",
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "24168c82-e2df-4c6d-9412-8801d8af944e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch all polygon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/polygons/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"polygons",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch polygon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/polygons/:id/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"polygons",
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "258468d7-8822-4c50-bd06-5b9744b1ed63"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create polygon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"My Polygon 5\",\r\n    \"coordinates\": [\r\n        [\r\n            12.9716,\r\n            77.5946\r\n        ],\r\n        [\r\n            12.9750,\r\n            77.5950\r\n        ],\r\n        [\r\n            12.9760,\r\n            77.5900\r\n        ],\r\n        [\r\n            12.9716,\r\n            77.5946\r\n        ]\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/polygons/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"polygons",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update polygon",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"My Polygon 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/polygons/:id/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"polygons",
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "258468d7-8822-4c50-bd06-5b9744b1ed63"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete polygon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"My Polygon 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/spatial/v1/polygons/:id/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"spatial",
+						"v1",
+						"polygons",
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "258468d7-8822-4c50-bd06-5b9744b1ed63"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
